@@ -309,7 +309,7 @@ section {
 #projects {
     background-color: #705b47bd;
     color: #ffffff;
-    background-image: url("/Assets/ProjectsBG.jpg");
+    background-image: url("Assets/ProjectsBG.jpg");
     background-blend-mode:overlay;
     background-clip:content-box;
     background-position: center;
