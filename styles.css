@@ -27,7 +27,7 @@ h1, h2, h3 {
 /* Navbar */
 .nav {
     background-color: #202020;
-    /* background-image: url(/gorgeous-metal-abstract-background-of-red-liquid-with-metallic-sparkles-and-glowing-effects-created-in-3d-illustration-rendering_9841979.jpg); */
+    /* background-image: url(/Assets/gorgeous-metal-abstract-background-of-red-liquid-with-metallic-sparkles-and-glowing-effects-created-in-3d-illustration-rendering_9841979.jpg); */
     padding: 15px;
     text-align: center;
     position: sticky;
@@ -234,7 +234,7 @@ section {
     padding: 40px;
     margin-bottom: 40px;
     text-align: center;
-    background-image: url(/IMG_20240604_231742.jpg);
+    background-image: url(/Assets/IMG_20240604_231742.jpg);
     background-size: 150vmin;
     background-blend-mode:overlay;
     background-position: center;
@@ -265,7 +265,7 @@ section {
     padding: 40px;
     margin-bottom: 40px;
     text-align: center;
-    background-image: url(/premium_photo-1668130718429-7abf7b186f2f.jpg);
+    background-image: url(/Assets/premium_photo-1668130718429-7abf7b186f2f.jpg);
     background-size: 150vmin;
     background-blend-mode:overlay;
     background-position: center;
@@ -307,7 +307,7 @@ section {
 #projects {
     background-color: #705b47bd;
     color: #ffffff;
-    background-image: url(/thumb-350-1363709.jpg);
+    background-image: url(/Assets/thumb-350-1363709.jpg);
     background-blend-mode:overlay;
     background-clip:content-box;
     background-position: center;
@@ -350,7 +350,7 @@ section {
     padding: 40px;
     margin-bottom: 40px;
     text-align: center;
-    background-image: url(/WhatsApp\ Image\ 2024-09-29\ at\ 01.01.08_9b23dac0.jpg);
+    background-image: url(/Assets/WhatsApp\ Image\ 2024-09-29\ at\ 01.01.08_9b23dac0.jpg);
     background-blend-mode: color-burn;
     /* background-blend-mode:overlay; */
     background-position: center;
@@ -373,7 +373,7 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 60px;
-    background-image: url(/WhatsApp\ Image\ 2024-09-29\ at\ 01.03.46_bc8413a9.jpg);
+    background-image: url(/Assets/WhatsApp\ Image\ 2024-09-29\ at\ 01.03.46_bc8413a9.jpg);
     background-size: auto;
 }
 
