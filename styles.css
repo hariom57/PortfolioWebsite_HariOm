@@ -1,0 +1,452 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f0f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Navbar */
+.nav {
+    background-color: #202020;
+    /* background-image: url(/gorgeous-metal-abstract-background-of-red-liquid-with-metallic-sparkles-and-glowing-effects-created-in-3d-illustration-rendering_9841979.jpg); */
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+.nav ul li a img{
+    block-size: 20px;
+}
+.nav ul li a:hover {
+    color: #00ccff;
+}
+
+
+
+
+/**************************************************
+
+/*Hamburger*/
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    height: 100%;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+
+  .logo{
+    text-shadow: 2px 2px 4px #000000;
+    color:rgb(255, 255, 255);
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffcc;
+    text-shadow: 0 0 5px #ffffff,
+        0 0 10px #ffffff,
+        0 0 20px rgb(0, 128, 15),
+        0 0 30px green,
+        0 0 40px green,
+        0 0 55px green,
+        0 0 70px green;           
+  }
+  
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  /* background-image: linear-gradient(to right, #9E768F , #9FA4C4); */
+    /* color: #3D0E61; */
+    height: 65px;
+    padding: 1em;
+    font-weight:bolder;
+    font-size:25px;
+  }
+  
+  .menu li:hover{
+    color:white;
+    cursor:pointer;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+  /*Container for menu button  */
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  /*  Creating the menu button */
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 6px;
+    width: 32px;
+    border-radius: 3px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+
+  /*  Adding Functionality to the Hamburger Menu with CSS  */
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(45deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+  /*  transforms the hamburger icon into a cross  */
+    transform: rotate(-45deg);
+  }
+  
+/* Making the navbar responsive by CSS Media Queries */
+@media (max-width: 700px) {
+    .menu-button-container {
+      display: flex;
+    }
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 50px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid #9f9a9a;
+      height: 2.5em;
+      padding: 0.5em;
+    }
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: black;
+      background-color:#333;
+      
+    }
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+   
+    }
+  }
+/**************************************************
+
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about {
+    background-color: rgba(109, 95, 76, 0.822);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    background-image: url(/IMG_20240604_231742.jpg);
+    background-size: 150vmin;
+    background-blend-mode:overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#about h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+#about h2 {
+    color: white;
+}
+
+
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 10px;
+    padding: 2px;
+    margin: auto;
+    background-color:rgb(44, 41, 42) ;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    background-image: url(/premium_photo-1668130718429-7abf7b186f2f.jpg);
+    background-size: 150vmin;
+    background-blend-mode:overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.skills p{
+    color: #ccc;
+    font-size: 1.1rem;
+    margin: 15px 0;
+    mix-blend-mode: screen;
+
+
+
+    color: #ffffff;
+    text-shadow: 0 0 5px #ff0000,
+        0 0 10px #ff0000,
+        0 0 20px rgb(255, 0, 0),
+        0 0 30px rgb(238, 19, 19),
+        0 0 40px rgb(128, 0, 0),
+        0 0 55px rgb(255, 0, 0),
+        0 0 70px rgb(255, 255, 255);           
+
+}
+
+.skills a {
+    text-shadow: none;
+    color: #5fd2ff;
+    font-weight: bold;
+}
+
+.skills a:hover {
+    color: #6eeeff;
+}
+
+
+
+/* Projects Section */
+#projects {
+    background-color: #705b47bd;
+    color: #ffffff;
+    background-image: url(/thumb-350-1363709.jpg);
+    background-blend-mode:overlay;
+    background-clip:content-box;
+    background-position: center;
+    background-size: 200vmin;
+}
+
+#projects h2 {
+    text-decoration: underline;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+#projects h3{
+    color: #ffffff;
+}
+
+#projects p {
+    color: #ffffff;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#projects a {
+    color: #000000;
+    font-weight: bold;
+    background-color: rgb(0, 242, 255);
+}
+
+#projects a:hover {
+    color: white;
+    background-color: #fff700;
+    color: #ff0000;
+}
+
+/* Music Section */
+#music {
+    background-color: #766262;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    background-image: url(/WhatsApp\ Image\ 2024-09-29\ at\ 01.01.08_9b23dac0.jpg);
+    background-blend-mode: color-burn;
+    /* background-blend-mode:overlay; */
+    background-position: center;
+
+}
+
+#music h2{
+    color: white;
+}
+#music p{
+    font-size: 1.2rem;
+    /* color: #555; */
+    color: white;
+}
+
+/* Contact Form */
+#contact {
+    background-color: #f8f8f8;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+    background-image: url(/WhatsApp\ Image\ 2024-09-29\ at\ 01.03.46_bc8413a9.jpg);
+    background-size: auto;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact label {
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+    color: #444;
+}
+
+#contact input, #contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+#contact button {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #00ccff;
+}
+
+/* Footer */
+footer {
+    text-align: center; 
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    position: bottom;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .checkbtn {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+   }
+   .nav-mobile {
+    display: none;
+   }
+   #check:checked ~ .nav-mobile {
+    display: block;
+   }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #contact form {
+        width: 100%;
+    }
+
+    #projects p {
+        font-size: 1rem;
+    }
+}
